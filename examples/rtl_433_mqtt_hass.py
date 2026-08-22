@@ -772,6 +772,16 @@ mappings = {
         }
     },
 
+    "Consumption": {
+        "device_type": "sensor",
+        "object_suffix": "consumption",
+        "config": {
+            "name": "SCMplus Consumption Value",
+            "value_template": "{{ value|int }}",
+            "state_class": "total_increasing",
+        }
+    },
+
     "reading": {
         "device_type": "sensor",
         "object_suffix": "reading",
