@@ -292,6 +292,7 @@ r_device const thermopro_tp829b = {
         .modulation  = FSK_PULSE_PCM,
         .short_width = 109,
         .long_width  = 109,
+        .tolerance   = 10,
         .reset_limit = 1500,
         .decode_fn   = &thermopro_tp829b_decode,
         .fields      = tp829b_output_fields,
